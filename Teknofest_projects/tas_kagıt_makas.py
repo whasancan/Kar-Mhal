@@ -13,8 +13,8 @@ def kazanan_bul(oyuncu, bilgisayar):
         or (oyuncu == "kagit" and bilgisayar == "tas")
         or (oyuncu == "makas" and bilgisayar == "kagit")
     ):
-        puan += 3
-        return f"Tebrikler bu eli kazandiz"
+        puan += 1
+        return f"Tebrikler bu eli kazandiniz."
     else:
         return "Bilgisayar kazandi!"
 
@@ -46,8 +46,8 @@ while hak < 5:  # 5 hak dolunca döngü kırılıyor
         print("Geçersiz bir seçim yaptiniz. Lütfen 'tas', 'kagit' veya 'makas' seçin.")
 
 # max ve min puana özel
-if puan == 15:
-    print("MAX WİN")
+if puan == 5:
+    print("MAX WIN")
 elif puan == 0:
     print("TOO BAD LUCK")
 
